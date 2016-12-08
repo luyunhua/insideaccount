@@ -1,5 +1,6 @@
 /vendor
 /backend/vendor
+/backend/.env
 /backend/composer.lock
 /.idea
 Homestead.json
