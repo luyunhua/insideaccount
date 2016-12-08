@@ -1,10 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="UTF-8" />
+    <title>海保中央认证中心</title>
+    <link rel="stylesheet" href="res/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="res/css/common-93ee3f8332.css">
+    <link rel="stylesheet" href="res/css/signin-a0916a6bf9.css" />
+    <!--<link rel="stylesheet" href="res/css/amazeui.css" />-->
 </head>
 <body>
-$END$
+<div id="container">
+    <div id="content">
+        <div id="logo"></div>
+        <div class="box contain" id="login">
+            <form id="fm1" action="/" method="post">
+                <section class="row">
+                    <label for="username"></label>
+                    <input id="username" name="username" class="required" tabindex="1" placeholder="用户名" type="text" value="" size="25"/>
+                    <div class="iconfont icon-yonghu"></div>
+                </section>
+                <section class="row">
+                    <label for="password"></label>
+                    <input id="password" name="password" class="required" tabindex="2" placeholder="密码" type="password" value="" size="25"/>
+                    <div class="iconfont icon-mima"></div>
+                </section>
+                <!--<section class="row">-->
+                    <!--<label for="checkcode"></label>-->
+                    <!--<input id="checkcode" name="checkcode" class="required" tabindex="3" placeholder="验证码" type="text" value="" size="25"/>-->
+                    <!--<div class="iconfont icon-yanzhengma"></div>-->
+                    <!--<div class="check_code_wrap">-->
+                        <!--<input id="checkCodeBtn" type="button" value="发送验证码" />-->
+                    <!--</div>-->
+                <!--</section>-->
+                <section class="row btn-row">
+                    <input class="btn btn-submit" name="submit" value="登录" tabindex="4" type="submit" />
+                </section>
+
+                <input type="hidden" name="smartRedirect" id="smartRedirect" value=""/>
+            </form>
+            <div class="qrcode" id="login_container">
+                <div class="wrp_code"><img class="qrcode lightBorder" src="res/images/wx.png"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="res/js/lib/jquery.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/jquery-validate/1.15.1/jquery.validate.js"></script>
+<script type="text/javascript" src="res/js/signin.js"></script>
 </body>
 </html>
+
+
+
