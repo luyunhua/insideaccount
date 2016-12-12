@@ -1,16 +1,19 @@
 <?php
+/**
+ *
+ * User: luyh
+ * Email: luyh@haibaobaoxian.com
+ * Date: 16/12/8
+ * Time: 下午3:29
+ * Description: 类说明
+ * Company: 大鱼网络科技
+ */
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It is a breeze. Simply tell Lumen the URIs it should respond to
-| and give it the Closure to call when that URI is requested.
-|
-*/
+$app->group(['prefix' => ''], function () use ($app) {
+    //framework test action
+    $app->post('/employee/verify', [
+        'uses' => 'EmployeeController@verify'
+    ]);
 
-$app->get('/', function () use ($app) {
-    return $app->version();
+
 });
