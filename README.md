@@ -7,6 +7,7 @@
   
   
 - 配置并使用
+  - 进入backend目录  执行 `composer install`
   - 系统token存储于redis,请确保redis server开启并处于可用状态
   - 数据库存储使用mysql server,请导入backend/database/sql/insideaccount_user.sql
   - 配置.env 文件,修改DOMAIN=hb.com为你自己的域名
